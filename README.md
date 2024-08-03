@@ -1,6 +1,10 @@
 # Roll-a-dice
 # This is my first project after learning python. This is like a game to roll a dice and get any random number until 1 player wins the game who first reaches 50 points. 
+
+
 import random
+
+
 def roll():
     min_value = 1
     max_value = 6
@@ -33,7 +37,7 @@ while max(player_scores) < max_score:
                 break
                 
             value = roll()
-            if value == 1:
+            if value == 1:                                                        
                 print("You have rolled 1, turn done!")
                 break
             else:
@@ -47,4 +51,4 @@ while max(player_scores) < max_score:
 
 max_score = max(player_scores)
 winning_idx = player_scores.index(max_score)
-print("The winner is Player number", winning_idx + 1, "with a score of", max_score)
+print("The winner is Player number", winning_idx + 1, "with a score of", max_score)        
